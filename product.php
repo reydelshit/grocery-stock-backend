@@ -52,8 +52,6 @@ switch ($method) {
         $stmt->bindParam(':stocks', $product->stocks);
 
 
-
-
         if ($stmt->execute()) {
 
             $last_id = $conn->lastInsertId();
